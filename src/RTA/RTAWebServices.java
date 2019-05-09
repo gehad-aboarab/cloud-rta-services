@@ -29,13 +29,4 @@ public class RTAWebServices {
 			@PathParam("amount") double amount) {
 		return database.renewRegistration(license_no, registration_no, credit_card, amount).toString();
 	}
-	
-//	@GET
-//	@Path("payment/{license_no}/{registration_no}/{credit-card}/{amount}")
-//	public JSONObject payment(@PathParam("license-no") String license_no, 
-//			@PathParam("registration-no") String registration_no,
-//			@PathParam("credit-card") String credit_card, 
-//			@PathParam("amount") double amount) {
-//		return database.payment(license_no, registration_no, credit_card, amount);
-//	}
 }
